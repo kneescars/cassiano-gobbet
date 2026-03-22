@@ -1,10 +1,8 @@
-//const TELEGRAM_USERNAME = "cassiano_telegram"; // ← your actual @username
-//"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 
 const TELEGRAM_USERNAME = "cassiano_telegram"; // ← your actual @username
-"use client";
 
 const INQUIRY_TYPES = [
   { id: "speaking", label: "Speaking Engagement", icon: "◈" },
