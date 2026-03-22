@@ -1,7 +1,7 @@
-// app/page.tsx — Server Component
+"use client";
 
-import SystemMap from "@/components/SystemMap";
 import Essay from "@/components/Essay";
+import SystemMap from "@/components/SystemMap";
 
 const ESSAYS = [
   {
