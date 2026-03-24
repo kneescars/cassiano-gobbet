@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/portfolio", label: "Work" },
+  { href: "https://zeitgeist.digital", label: "Zeitgeist", external: true },
 ];
 
 export default function Navbar() {
@@ -76,42 +77,55 @@ export default function Navbar() {
         className="desktop-nav"
       >
         {NAV_LINKS.map((link) => {
-          const isActive = pathname === link.href;
-          return (
+          const isActive = !link.external && pathname === link.href;
+          const linkContent = (
+            <span
+              style={{
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.78rem",
+                letterSpacing: "0.05em",
+                padding: "6px 14px",
+                borderRadius: "4px",
+                color: isActive ? "var(--accent)" : "var(--text-muted)",
+                background: isActive ? "var(--accent-dim)" : "transparent",
+                border: isActive
+                  ? "1px solid rgba(56,189,248,0.2)"
+                  : "1px solid transparent",
+                display: "inline-block",
+                transition: "all 0.2s ease",
+                cursor: "pointer",
+              }}
+              onMouseEnter={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                if (!isActive) {
+                  el.style.color = "var(--text)";
+                  el.style.background = "var(--surface)";
+                }
+              }}
+              onMouseLeave={(e) => {
+                const el = e.currentTarget as HTMLElement;
+                if (!isActive) {
+                  el.style.color = "var(--text-muted)";
+                  el.style.background = "transparent";
+                }
+              }}
+            >
+              {link.label}
+            </span>
+          );
+
+          return link.external ? (
+            <a
+              key={link.href}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {linkContent}
+            </a>
+          ) : (
             <Link key={link.href} href={link.href}>
-              <span
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  fontSize: "0.78rem",
-                  letterSpacing: "0.05em",
-                  padding: "6px 14px",
-                  borderRadius: "4px",
-                  color: isActive ? "var(--accent)" : "var(--text-muted)",
-                  background: isActive ? "var(--accent-dim)" : "transparent",
-                  border: isActive
-                    ? "1px solid rgba(56,189,248,0.2)"
-                    : "1px solid transparent",
-                  display: "inline-block",
-                  transition: "all 0.2s ease",
-                  cursor: "pointer",
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  if (!isActive) {
-                    el.style.color = "var(--text)";
-                    el.style.background = "var(--surface)";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  if (!isActive) {
-                    el.style.color = "var(--text-muted)";
-                    el.style.background = "transparent";
-                  }
-                }}
-              >
-                {link.label}
-              </span>
+              {linkContent}
             </Link>
           );
         })}
@@ -201,18 +215,14 @@ export default function Navbar() {
             gap: "12px",
           }}
         >
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-            >
+          {NAV_LINKS.map((link) => {
+            const label = (
               <span
                 style={{
                   fontFamily: "var(--font-mono)",
                   fontSize: "0.9rem",
                   color:
-                    pathname === link.href
+                    !link.external && pathname === link.href
                       ? "var(--accent)"
                       : "var(--text-muted)",
                   display: "block",
@@ -221,8 +231,28 @@ export default function Navbar() {
               >
                 {link.label}
               </span>
-            </Link>
-          ))}
+            );
+
+            return link.external ? (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </a>
+            ) : (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+              >
+                {label}
+              </Link>
+            );
+          })}
         </div>
       )}
 

@@ -167,9 +167,8 @@ export default function HomePage() {
               marginBottom: "44px",
             }}
           >
-            I study the structures that shape how we know, communicate, and
-            organize — across information systems, media ecology, and technology
-            culture.
+            I study the structures that shape how we organise, communicate, and
+            distribute — across information systems, infrastructure and modules of power.
           </p>
 
           {/* CTAs */}
