@@ -154,21 +154,6 @@ export default function Contact() {
               </a>
             </div>
 
-            {/* Response info */}
-            <div style={{ border: "1px solid #1E1E1E", borderRadius: 8, padding: "20px", background: "#0D0D0D" }}>
-              <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#4B5563", letterSpacing: "0.12em", marginBottom: 16 }}>RESPONSE TIMES</div>
-              {[
-                { type: "Speaking / Events", time: "48–72 hrs" },
-                { type: "Research & Consulting", time: "1–3 days" },
-                { type: "Press Inquiries", time: "24 hrs" },
-              ].map((r) => (
-                <div key={r.type} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10, paddingBottom: 10, borderBottom: "1px solid #111" }}>
-                  <span style={{ fontFamily: "var(--font-body)", fontSize: 12, color: "#6B7280" }}>{r.type}</span>
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "#38BDF8" }}>{r.time}</span>
-                </div>
-              ))}
-            </div>
-
             {/* Availability */}
             <div style={{ border: "1px solid rgba(52,211,153,0.2)", borderRadius: 8, padding: "16px 20px", background: "rgba(52,211,153,0.03)" }}>
               <div style={{ display: "flex", alignItems: "center", gap: 8 }}>

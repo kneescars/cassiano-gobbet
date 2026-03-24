@@ -72,5 +72,5 @@ Push to GitHub and connect to Vercel. No environment variables required.
 1. **Content**: Edit `data/domains.ts` and `data/portfolio.ts`
 2. **Colors**: Modify CSS variables in `globals.css`
 3. **Personal info**: Update `app/about/page.tsx` and `app/portfolio/page.tsx`
-4. **Email**: Replace `hello@cassiano.io` throughout with actual address
+4. **Email**: Replace `cassiano@zeitgeist.digital` throughout with actual address
 5. **Boot lines**: Edit the `LINES` array in `components/BootSequence.tsx`

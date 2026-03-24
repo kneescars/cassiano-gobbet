@@ -380,7 +380,7 @@ export default function HomePage() {
               consulting — or simply a conversation about something that matters.
             </p>
             <a
-              href="mailto:hello@cassiano.io"
+              href="mailto:cassiano@zeitgeist.digital"
               style={{
                 display: "inline-flex",
                 alignItems: "center",

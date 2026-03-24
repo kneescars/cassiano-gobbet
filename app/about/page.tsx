@@ -5,19 +5,19 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const PRINCIPLES = [
-  { label: "Systems Thinking", desc: "Every phenomenon exists within structures. Understanding them means mapping the whole." },
-  { label: "Critical Analysis", desc: "Interrogating assumptions — especially comfortable ones — is the beginning of insight." },
-  { label: "Public Clarity", desc: "Complex ideas have public consequences. Making them accessible is an ethical responsibility." },
-  { label: "Interdisciplinary", desc: "The most interesting questions live at the borders between fields." },
+	{label:"System Mapping",desc:"Start by naming the system: actors, incentives, constraints, and feedback loops. If you cannot map it, you cannot change it."},
+	{label:"Mechanism Over Morals",desc:"Replace outrage with causality. Focus on what produces outcomes repeatedly, not who is most blameworthy in the latest episode."},
+	{label:"Intervention Design",desc:"Treat solutions as levers and trade-offs. Ask what shifts incentives, what breaks feedback loops, and what failures a fix will create."},
+	{label:"Public Legibility",desc:"If a system governs millions, it must be explainable to non-experts. Clarity is not simplification. It is accountability."},
 ];
 
 const SPEAKING_TOPICS = [
-  "Platform Power & Democratic Accountability",
-  "The Political Economy of Information",
-  "Media Literacy in the Age of AI",
-  "Technology, Society, and the Future of Journalism",
-  "Algorithmic Governance and Public Life",
-  "Digital Rights and the Architecture of the Internet",
+  "The Hidden Infrastructure of News",
+  "The Real Economics of Journalism in the Platform Age",
+  "The Myth of the Neutral Algorithm",
+  "The Information Supply Chain",
+  "AI as a Cognitive Exoskeleton for Journalists",
+  "The New Architecture of Truth",
 ];
 
 export default function About() {
@@ -44,7 +44,7 @@ export default function About() {
               Strategist.
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, marginBottom: 20, fontWeight: 300 }}>
-              I am a researcher, writer, and strategic advisor working at the intersection of media systems, technology culture, and social transformation. My work asks how digital infrastructure shapes what we know, what we believe, and who gets to participate in public life.
+              I am a researcher and writer with a practitioner’s background, working at the intersection of media systems, technology, and social change. I focus on how digital infrastructure and platform incentives shape what people see, what they trust, and who gets heard in public life.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, marginBottom: 20, fontWeight: 300 }}>
               Trained in journalism and information systems, my career spans investigative reporting, academic research, and consulting for organizations navigating the complexities of digital transformation. I bring both analytical rigor and practical experience to the questions I care about.
@@ -57,10 +57,10 @@ export default function About() {
           {/* Sidebar stats */}
           <div style={{ opacity: visible ? 1 : 0, transition: "all 0.7s ease 0.5s", display: "flex", flexDirection: "column", gap: 2, minWidth: 160 }}>
             {[
-              { n: "10+", label: "Years of Research" },
-              { n: "6", label: "Countries of Practice" },
-              { n: "20+", label: "Published Papers" },
-              { n: "40+", label: "Partner Institutions" },
+              { n: "15+", label: "Years of Research" },
+              { n: "4", label: "Countries of Practice" },
+//              { n: "20+", label: "Published Papers" },
+//              { n: "40+", label: "Partner Institutions" },
             ].map((s) => (
               <div key={s.label} style={{ padding: "20px", border: "1px solid #1E1E1E", borderRadius: 8, background: "#0D0D0D", textAlign: "center" }}>
                 <div style={{ fontFamily: "var(--font-display)", fontSize: 32, color: "#38BDF8", lineHeight: 1, marginBottom: 6 }}>{s.n}</div>

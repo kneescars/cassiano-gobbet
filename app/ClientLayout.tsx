@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Navbar from "@/components/Navbar";
+import { useEffect, useState } from "react";
+
 import BootSequence from "@/components/BootSequence";
+import Navbar from "@/components/Navbar";
 
 export default function ClientLayout({
   children,
@@ -13,18 +14,12 @@ export default function ClientLayout({
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true);
-    // Check sessionStorage so boot only runs once per session
-    const hasBooted = sessionStorage.getItem("booted");
-    if (hasBooted) {
-      setBooted(true);
-    }
-  }, []);
+  setMounted(true);
+}, []);
 
-  const handleBootComplete = () => {
-    sessionStorage.setItem("booted", "1");
-    setBooted(true);
-  };
+const handleBootComplete = () => {
+  setBooted(true);
+};
 
   if (!mounted) return null;
 
@@ -51,7 +46,7 @@ export default function ClientLayout({
               className="mono"
               style={{ color: "var(--text-muted)", fontSize: "0.75rem" }}
             >
-              © {new Date().getFullYear()} Cassiano —{" "}
+              © {new Date().getFullYear()} Digital Zeitgeist —{" "}
               <span style={{ color: "var(--accent)" }}>
                 thinking in systems
               </span>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -117,7 +118,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <a
-          href="mailto:hello@cassiano.io"
+          href="mailto:cassiano@zeitgeist.digital"
           style={{
             fontFamily: "var(--font-mono)",
             fontSize: "0.75rem",

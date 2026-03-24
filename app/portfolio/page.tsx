@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import PortfolioItem from "@/components/PortfolioItem";
 import { projects } from "@/data/portfolio";
+import { useState } from "react";
 
 const ALL_CATEGORIES = ["All", ...Array.from(new Set(projects.map((p) => p.category)))];
 
@@ -185,9 +185,9 @@ export default function PortfolioPage() {
         >
           {[
             { label: "Projects", value: `${projects.length}+` },
-            { label: "Years active", value: "7+" },
-            { label: "Talks delivered", value: "30+" },
-            { label: "Countries", value: "12+" },
+            { label: "Years active", value: "20+" },
+//            { label: "Talks delivered", value: "30+" },
+ //         { label: "Countries", value: "12+" },
           ].map((stat) => (
             <div key={stat.label} style={{ textAlign: "center" }}>
               <div
