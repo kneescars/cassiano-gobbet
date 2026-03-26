@@ -13,11 +13,16 @@ export default function ClientLayout({
   const [booted, setBooted] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => {
+useEffect(() => {
   setMounted(true);
+  const hasBooted = sessionStorage.getItem("booted");
+  if (hasBooted) {
+    setBooted(true);
+  }
 }, []);
 
 const handleBootComplete = () => {
+  sessionStorage.setItem("booted", "1");
   setBooted(true);
 };
 
