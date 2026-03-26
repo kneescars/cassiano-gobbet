@@ -14,20 +14,20 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "media-topology",
-    title: "Media Topology",
+    id: "hidden-infra",
+    title: "The Hidden Infrastructure of News",
     year: "2024",
     category: "Research",
-    description: "Mapping the structural relationships between media forms across historical epochs.",
-    detail: `A longitudinal research project examining how the topological properties of communication networks — density, centrality, clustering — predict cultural outcomes. Drawing on network science, media history, and information theory, this work proposes a formal vocabulary for describing media environments beyond McLuhan's intuitions.
+    description: "The hidden technical stack behind modern news: cloud/data centres, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs.",
+    detail: `A systems-level analysis of the mostly invisible infrastructure that determines what news becomes visible: cloud and data-centre layers, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs. By treating journalism as an information supply chain, it shows how chokepoints and default optimisations for latency, engagement, and monetisation reshape distribution and editorial incentives—often without any explicit decision to do so.
 
 The central argument: media forms do not simply transmit culture, they constrain its possibility space. By modeling these constraints topologically, we can generate testable predictions about what kinds of ideas, movements, and institutions are possible under different media regimes.`,
-    tags: ["Network Science", "Media History", "Information Theory"],
+    tags: ["News Industry", "Infrastructure", "Digital"],
     status: "ongoing",
   },
   {
     id: "ontological-debt",
-    title: "Ontological Debt",
+    title: "Why Most AI Journalism Debates Are Intellectually Shallow",
     year: "2023",
     category: "Essay Series",
     description: "A framework for thinking about the hidden costs of premature data modeling in organizations.",
@@ -39,7 +39,7 @@ Published as a five-part essay series, this work has been cited in information a
   },
   {
     id: "attention-commons",
-    title: "The Attention Commons",
+    title: "The Real Economics of Journalism in the Platform Age",
     year: "2023",
     category: "Research",
     description: "Applying commons theory to the political economy of human attention.",
@@ -63,7 +63,7 @@ Delivered at conferences across Europe and Latin America, this talk introduces a
   },
   {
     id: "epistemic-infrastructure",
-    title: "Epistemic Infrastructure Lab",
+    title: "Disinformation Is Not the Real Problem",
     year: "2024",
     category: "Initiative",
     description: "A collaborative research initiative focused on the design of knowledge systems for the AI era.",
@@ -75,7 +75,7 @@ Current projects include: a taxonomy of epistemic failure modes in digital envir
   },
   {
     id: "systems-atlas",
-    title: "Systems Atlas",
+    title: "AI as a Cognitive Exoskeleton for Journalists",
     year: "2022",
     category: "Design",
     description: "An interactive visualization of interconnected global systems and their feedback relationships.",
