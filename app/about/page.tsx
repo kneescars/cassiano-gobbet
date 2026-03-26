@@ -57,8 +57,8 @@ export default function About() {
           {/* Sidebar stats */}
           <div style={{ opacity: visible ? 1 : 0, transition: "all 0.7s ease 0.5s", display: "flex", flexDirection: "column", gap: 2, minWidth: 160 }}>
             {[
-              { n: "15+", label: "Years of Research" },
-              { n: "4", label: "Countries of Practice" },
+              { n: "15", label: "Years of Research" },
+              { n: "25", label: "Years of Career" },
 //              { n: "20+", label: "Published Papers" },
 //              { n: "40+", label: "Partner Institutions" },
             ].map((s) => (
