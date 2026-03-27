@@ -39,18 +39,20 @@ export default function About() {
         <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 48, alignItems: "start" }}>
           <div style={{ opacity: visible ? 1 : 0, transform: visible ? "none" : "translateY(20px)", transition: "all 0.7s ease 0.2s" }}>
             <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(36px, 5vw, 60px)", color: "#EAEAEA", fontWeight: 400, lineHeight: 1.1, marginBottom: 32, letterSpacing: "-0.02em" }}>
-              Researcher.<br />
+              Analyst.<br />
               <span style={{ fontStyle: "italic", color: "#38BDF8" }}>Writer.</span><br />
-              Strategist.
+              Systems thinker.
             </h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, marginBottom: 20, fontWeight: 300 }}>
-              I am a researcher and writer with a practitioner’s background, working at the intersection of media systems, technology, and social change. I focus on how digital infrastructure and platform incentives shape what people see, what they trust, and who gets heard in public life.
+              I work at the intersection of media systems, technology, and information power, focusing on how digital infrastructure, platform incentives, and AI reshape what societies know, trust, and act upon. My work connects layers that are usually treated in isolation—editorial, technical, economic, and political—to explain how modern information systems actually function.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, marginBottom: 20, fontWeight: 300 }}>
-              Trained in journalism and information systems, my career spans investigative reporting, academic research, and consulting for organizations navigating the complexities of digital transformation. I bring both analytical rigor and practical experience to the questions I care about.
+              With more than 25 years of experience across journalism, product, and digital environments, my background spans reporting, editing, strategy, and hands-on exposure to the technical and operational realities behind media systems. I have worked with global organizations such as BBC and Yahoo, and participated in international discussions on AI and media alongside leading practitioners and researchers.
+            </p>            <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, marginBottom: 20, fontWeight: 300 }}>
+              My perspective is shaped by a combination of practical experience and interdisciplinary study, including entrepreneurship, information systems, cybersecurity, and digital infrastructure. Rather than focusing on a single domain, I analyze how these systems interact—how content is produced, distributed, amplified, distorted, and ultimately turned into influence.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: 16, color: "#9CA3AF", lineHeight: 1.85, maxWidth: 540, fontWeight: 300 }}>
-              Based between Europe and Latin America, I work with media organizations, universities, civil society groups, and policy institutions on questions of platform governance, media literacy, and the political economy of information.
+              Based between Europe and Latin America, I work with media professionals, researchers, and organizations seeking to understand and navigate the structural changes affecting journalism, technology, and the information ecosystem.
             </p>
           </div>
 

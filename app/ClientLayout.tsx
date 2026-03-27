@@ -13,18 +13,24 @@ export default function ClientLayout({
   const [booted, setBooted] = useState(false);
   const [mounted, setMounted] = useState(false);
 
-useEffect(() => {
-  setMounted(true);
-  const hasBooted = sessionStorage.getItem("booted");
-  if (hasBooted) {
-    setBooted(true);
-  }
-}, []);
+  useEffect(() => {
+    setMounted(true);
+    const hasBooted = sessionStorage.getItem("booted");
+    const isReload = window.performance
+      ?.getEntriesByType("navigation")
+      .some((e) => (e as PerformanceNavigationTiming).type === "reload");
 
-const handleBootComplete = () => {
-  sessionStorage.setItem("booted", "1");
-  setBooted(true);
-};
+    if (hasBooted && !isReload) {
+      setBooted(true);
+    } else {
+      sessionStorage.removeItem("booted");
+    }
+  }, []);
+
+  const handleBootComplete = () => {
+    sessionStorage.setItem("booted", "1");
+    setBooted(true);
+  };
 
   if (!mounted) return null;
 
