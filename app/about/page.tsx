@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const PRINCIPLES = [
-	{label:"System Mapping",desc:"Start by naming the system: actors, incentives, constraints, and feedback loops. If you cannot map it, you cannot change it."},
-	{label:"Mechanism Over Morals",desc:"Replace outrage with causality. Focus on what produces outcomes repeatedly, not who is most blameworthy in the latest episode."},
-	{label:"Intervention Design",desc:"Treat solutions as levers and trade-offs. Ask what shifts incentives, what breaks feedback loops, and what failures a fix will create."},
-	{label:"Public Legibility",desc:"If a system governs millions, it must be explainable to non-experts. Clarity is not simplification. It is accountability."},
+	{label:"Map the System",desc:"Name the system in concrete terms: actors, incentives, constraints, and feedback loops. No vague narratives, no abstractions. If it cannot be mapped clearly, it cannot be understood or acted upon—and anything built on top of it will fail."},
+	{label:"Identify the Mechanisms",desc:"Ignore outrage cycles. Focus on causality. What matters is not who is blamed, but what produces the same outcomes repeatedly. If it scales, it is structural—and must be addressed at multiple points, not in isolation."},
+	{label:"Design the Intervention",desc:"Every solution is a trade-off. Identify leverage points, model second-order effects, and assume failure modes upfront. If an intervention does not change incentives or break a loop, it is not a solution—it is a temporary patch"},
+	{label:"Make it Understandable",desc:"Systems that shape millions must be explainable without distortion. Clarity is not simplification—it is precision under constraint. If it cannot be explained clearly, it cannot be challenged or changed."},
 ];
 
 const SPEAKING_TOPICS = [
