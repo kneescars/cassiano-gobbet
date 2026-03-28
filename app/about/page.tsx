@@ -102,7 +102,7 @@ export default function About() {
         <div style={{ height: 1, background: "linear-gradient(90deg, transparent, #1E1E1E 20%, #1E1E1E 80%, transparent)" }} />
       </div>
 
-      {/* Speaking topics */}
+      {/* Speaking topics
       <section style={{ padding: "80px 24px", maxWidth: 900, margin: "0 auto" }}>
         <div style={{ marginBottom: 40 }}>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "#34D399", letterSpacing: "0.15em", marginBottom: 16 }}>SYS://SPEAKING</div>
@@ -124,7 +124,7 @@ export default function About() {
             Invite me to speak →
           </Link>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer style={{ borderTop: "1px solid #1E1E1E", padding: "24px", textAlign: "center" }}>

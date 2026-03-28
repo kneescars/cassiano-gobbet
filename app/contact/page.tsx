@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const TELEGRAM_USERNAME = "cassiano_telegram"; // ← your actual @username
 
 const INQUIRY_TYPES = [
-  { id: "speaking", label: "Speaking Engagement", icon: "◈" },
+//  { id: "speaking", label: "Speaking Engagement", icon: "◈" },
   { id: "consulting", label: "Consulting", icon: "◇" },
   { id: "research", label: "Research Collaboration", icon: "◉" },
   { id: "press", label: "Press & Media", icon: "◎" },
