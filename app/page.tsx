@@ -119,7 +119,7 @@ export default function HomePage() {
                 textTransform: "uppercase",
               }}
             >
-              Researcher · Writer · Systems Thinker
+             Analyst · Writer · Systems Thinker
             </span>
           </div>
 

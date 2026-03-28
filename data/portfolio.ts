@@ -17,7 +17,7 @@ export const projects: Project[] = [
     id: "hidden-infra",
     title: "The Hidden Infrastructure of News",
     year: "2024",
-    category: "Research",
+    category: "Analysis",//any category placed here will show up in the menu 'All Analysis, etc'
     description: "The hidden technical stack behind modern news: cloud/data centres, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs.",
     detail: `A systems-level analysis of the mostly invisible infrastructure that determines what news becomes visible: cloud and data-centre layers, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs. By treating journalism as an information supply chain, it shows how chokepoints and default optimisations for latency, engagement, and monetisation reshape distribution and editorial incentives—often without any explicit decision to do so.
 
@@ -29,7 +29,7 @@ The central argument: media forms do not simply transmit culture, they constrain
     id: "ontological-debt",
     title: "Why Most AI Journalism Debates Are Intellectually Shallow",
     year: "2023",
-    category: "Essay Series",
+    category: "Essays",
     description: "A framework for thinking about the hidden costs of premature data modeling in organizations.",
     detail: `Borrowing from software engineering's concept of technical debt, ontological debt describes the accumulated cost of conceptual commitments made too early, too rigidly, or without adequate understanding of the domain being modeled.
 
@@ -41,7 +41,7 @@ Published as a five-part essay series, this work has been cited in information a
     id: "attention-commons",
     title: "The Real Economics of Journalism in the Platform Age",
     year: "2023",
-    category: "Research",
+    category: "Analysis",
     description: "Applying commons theory to the political economy of human attention.",
     detail: `Attention is finite. Digital platforms treat it as a resource to be extracted rather than a commons to be managed. This research applies Elinor Ostrom's framework for governing shared resources to the problem of collective attention — asking what institutional designs might sustain a healthy epistemic commons in the age of algorithmic recommendation.
 
@@ -53,7 +53,7 @@ The research includes both theoretical contributions and a survey of existing go
     id: "interface-ideology",
     title: "Interface Ideology",
     year: "2022",
-    category: "Talk",
+    category: "Essay",
     description: "Keynote exploring how UI conventions encode and transmit ideological assumptions.",
     detail: `Every interface is an argument. The button invites action; the notification demands attention; the feed implies infinitude. These are not innocent design choices — they are claims about how the world works, who has authority, and what human beings are for.
 
@@ -65,7 +65,7 @@ Delivered at conferences across Europe and Latin America, this talk introduces a
     id: "epistemic-infrastructure",
     title: "Disinformation Is Not the Real Problem",
     year: "2024",
-    category: "Initiative",
+    category: "Essay",
     description: "A collaborative research initiative focused on the design of knowledge systems for the AI era.",
     detail: `An interdisciplinary initiative bringing together researchers from information science, philosophy, computer science, and journalism to address the challenge of knowledge infrastructure in an era of AI-generated content and fragmented institutional authority.
 
@@ -77,7 +77,7 @@ Current projects include: a taxonomy of epistemic failure modes in digital envir
     id: "systems-atlas",
     title: "AI as a Cognitive Exoskeleton for Journalists",
     year: "2022",
-    category: "Design",
+    category: "Analysis",
     description: "An interactive visualization of interconnected global systems and their feedback relationships.",
     detail: `A web-based interactive atlas mapping the causal relationships between climate systems, economic systems, political systems, and technological systems at the global scale. Designed for use in educational contexts and policy deliberation.
 
