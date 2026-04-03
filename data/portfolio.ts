@@ -15,39 +15,39 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "hidden-infra",
-    title: "The Hidden Infrastructure of News",
-    year: "2024",
+    title: "Ads, tech the cost of news and the economics you don’t see",
+    year: "2026",
     category: "Analysis",//any category placed here will show up in the menu 'All Analysis, etc'
-    description: "The hidden technical stack behind modern news: cloud/data centres, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs.",
-    detail: `A systems-level analysis of the mostly invisible infrastructure that determines what news becomes visible: cloud and data-centre layers, hosting, CDNs, ad-tech, analytics, ranking systems, and platform APIs. By treating journalism as an information supply chain, it shows how chokepoints and default optimisations for latency, engagement, and monetisation reshape distribution and editorial incentives—often without any explicit decision to do so.
+    description: "The hidden cost structure of modern news: ad-tech extraction acting as an invisible tax, and the infrastructure rent of platforms controlling distribution, hosting, and access to audiences.",
+    detail: `A structural analysis of the transition from isolated misinformation to “deep disinformation,” where narratives accumulate into durable, self-reinforcing corpora that audiences inhabit over time. The piece examines how algorithmic amplification, emotional engagement, and network effects transform exposure into epistemic enclosure, making correction ineffective and disagreement persistent. 
 
-The central argument: media forms do not simply transmit culture, they constrain its possibility space. By modeling these constraints topologically, we can generate testable predictions about what kinds of ideas, movements, and institutions are possible under different media regimes.`,
-    tags: ["News Industry", "Infrastructure", "Digital"],
-    status: "ongoing",
-  },
-  {
-    id: "ontological-debt",
-    title: "Why Most AI Journalism Debates Are Intellectually Shallow",
-    year: "2023",
-    category: "Essays",
-    description: "A framework for thinking about the hidden costs of premature data modeling in organizations.",
-    detail: `Borrowing from software engineering's concept of technical debt, ontological debt describes the accumulated cost of conceptual commitments made too early, too rigidly, or without adequate understanding of the domain being modeled.
-
-Published as a five-part essay series, this work has been cited in information architecture practice, knowledge management, and organizational theory contexts. The core insight: the cost of changing a conceptual model grows super-linearly with the amount of infrastructure built on top of it.`,
-    tags: ["Information Architecture", "Organizations", "Epistemology"],
+It connects these dynamics to institutional outcomes across Western democracies and Latin America, highlighting how polarisation, media capture, and fragmented information flows erode shared factual baselines. By focusing on incentives rather than individual actors alone, it argues that the loss of common ground is an emergent property of platform economics, attention-driven design, and fragmented regulatory environments—requiring structural, enforceable interventions rather than content-level fixes.`,
+    tags: ["Disinformation", "Reality", "Infrastructure"],
     status: "published",
   },
   {
+    id: "deep-disinformation",
+    title: "From misinformation to deep disinformation: how polarised audiences lost common ground ",
+    year: "2026",
+    category: "Essay",
+    description: "How disinformation evolves into self-reinforcing belief ecosystems that fragment shared reality and weaken institutional consensus.",
+    detail: `A structural analysis of how disinformation has evolved from isolated falsehoods into persistent, self-reinforcing ecosystems. Over time, repeated narratives form a “corpus” that users return to, creating parallel realities with little overlap.
+
+By examining engagement dynamics, identity alignment, and algorithmic amplification, it shows how audiences cluster around incompatible versions of truth. The central argument: the problem is no longer correcting errors, but confronting a landscape where common ground has structurally disappeared.  `,
+    tags: ["Information Architecture", "Organizations", "Epistemology"],
+    status: "ongoing",
+  },
+  {
     id: "attention-commons",
-    title: "The Real Economics of Journalism in the Platform Age",
-    year: "2023",
+    title: "How digital economics led the institutional voice to “Selfie” journalism",
+    year: "2026",
     category: "Analysis",
     description: "Applying commons theory to the political economy of human attention.",
     detail: `Attention is finite. Digital platforms treat it as a resource to be extracted rather than a commons to be managed. This research applies Elinor Ostrom's framework for governing shared resources to the problem of collective attention — asking what institutional designs might sustain a healthy epistemic commons in the age of algorithmic recommendation.
 
 The research includes both theoretical contributions and a survey of existing governance experiments in platform design, academic publishing, and public media.`,
-    tags: ["Political Economy", "Commons Theory", "Platform Design"],
-    status: "research",
+    tags: ["Digital economics", "Narrative", "Individualism", "first-person"],
+    status: "published",
   },
   {
     id: "interface-ideology",
@@ -59,7 +59,7 @@ The research includes both theoretical contributions and a survey of existing go
 
 Delivered at conferences across Europe and Latin America, this talk introduces a critical vocabulary for analyzing interfaces as ideological artifacts, drawing on semiotics, political theory, and the history of design. The talk has been adapted as a course module at three universities.`,
     tags: ["Design Theory", "Semiotics", "Critical Theory"],
-    status: "live",
+    status: "research",
   },
   {
     id: "epistemic-infrastructure",
@@ -77,7 +77,7 @@ Current projects include: a taxonomy of epistemic failure modes in digital envir
     id: "systems-atlas",
     title: "AI as a Cognitive Exoskeleton for Journalists",
     year: "2022",
-    category: "Analysis",
+    category: "Commentary",
     description: "An interactive visualization of interconnected global systems and their feedback relationships.",
     detail: `A web-based interactive atlas mapping the causal relationships between climate systems, economic systems, political systems, and technological systems at the global scale. Designed for use in educational contexts and policy deliberation.
 
