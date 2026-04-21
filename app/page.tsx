@@ -147,9 +147,8 @@ export default function HomePage() {
             all the{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, var(--accent), #818CF8)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
+                color: "transparent",
+                WebkitTextStroke: "1px rgba(234,234,234,0.4)",
               }}
             >
               way down.
