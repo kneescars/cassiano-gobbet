@@ -27,7 +27,7 @@ It connects these dynamics to institutional outcomes across Western democracies 
   },
   {
     id: "deep-disinformation",
-    title: "From misinformation to deep disinformation: how polarised audiences lost common ground ",
+    title: "Deep disinformation: loss of common ground is the new normal",
     year: "2026",
     category: "Essay",
     description: "How disinformation evolves into self-reinforcing belief ecosystems that fragment shared reality and weaken institutional consensus.",
@@ -35,7 +35,7 @@ It connects these dynamics to institutional outcomes across Western democracies 
 
 By examining engagement dynamics, identity alignment, and algorithmic amplification, it shows how audiences cluster around incompatible versions of truth. The central argument: the problem is no longer correcting errors, but confronting a landscape where common ground has structurally disappeared.  `,
     tags: ["Information Architecture", "Organizations", "Epistemology"],
-    status: "ongoing",
+    status: "published",
   },
   {
     id: "attention-commons",
@@ -50,16 +50,17 @@ The research includes both theoretical contributions and a survey of existing go
     status: "published",
   },
   {
-    id: "interface-ideology",
-    title: "Interface Ideology",
-    year: "2022",
+    id: "lost - media",
+    title: "Checkmate - How Media Lost the Public Information Space  ",
+    year: "2026",
     category: "Essay",
-    description: "Keynote exploring how UI conventions encode and transmit ideological assumptions.",
-    detail: `Every interface is an argument. The button invites action; the notification demands attention; the feed implies infinitude. These are not innocent design choices — they are claims about how the world works, who has authority, and what human beings are for.
+    description: "Media lost the war for attention in the infrastructure layer - not the content.",
+    detail: `Media’s decline is not reducible to the dominance of Alphabet and Meta, but reflects a structural loss of control over infrastructure and visibility. The transition from scarcity to abundance dismantled its economic model, exposing it to global competition and eroding pricing power.
 
-Delivered at conferences across Europe and Latin America, this talk introduces a critical vocabulary for analyzing interfaces as ideological artifacts, drawing on semiotics, political theory, and the history of design. The talk has been adapted as a course module at three universities.`,
-    tags: ["Design Theory", "Semiotics", "Critical Theory"],
-    status: "research",
+Presented in academic and policy contexts, this work frames media not as an industry in crisis but as a system reconfigured by platform monopolies. It develops a conceptual lens to understand how control over distribution reshapes perception, coordination, and the stability of shared reality.
+`,
+    tags: ["Infrastructure", "Information Monopoly", "Media"],
+    status: "published",
   },
   {
     id: "epistemic-infrastructure",
